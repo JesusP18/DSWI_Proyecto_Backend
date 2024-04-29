@@ -45,6 +45,7 @@ namespace DSWI_Proyecto_Backend.Repositorio.DAO
                 proyecto.DescripcionTipo = dr.GetString("DescripcionTipo");
                 proyecto.Presupuesto = dr.GetDecimal("Presupuesto");
                 proyecto.Asignado = dr.GetString("Asignado");
+                proyecto.Porcentaje = dr.GetString("Porcentaje");
                 proyecto.Comentarios = dr.GetString("Comentarios");
 
                 lstProyectos.Add(proyecto);
