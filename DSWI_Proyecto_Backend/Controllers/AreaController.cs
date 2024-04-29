@@ -44,7 +44,7 @@ namespace DSWI_Proyecto_Backend.Controllers
         }
 
         //ELIMINAR AREA
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> eliminarArea(int id)
         {
             var mensaje = await Task.Run(() => new AreaDAO().eliminarArea(id));

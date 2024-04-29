@@ -42,7 +42,7 @@ namespace DSWI_Proyecto_Backend.Controllers
         }
 
         //ELIMINAR CATEGORIA
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> eliminarCategoria(int id)
         {
             var mensaje = await Task.Run(() => new CategoriaDAO().eliminarCategoria(id));

@@ -38,7 +38,7 @@ namespace DSWI_Proyecto_Backend.Controllers
             return Ok(mensaje);
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> eliminarPrioridad(int id)
         {
             var mensaje = await Task.Run(() => new PrioridadDAO().eliminarPrioridad(id));

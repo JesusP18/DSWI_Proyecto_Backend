@@ -42,7 +42,7 @@ namespace DSWI_Proyecto_Backend.Controllers
         }
 
         //ELIMINAR COMPLEJIDAD
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> eliminarComplejidad(int id)
         {
             var mensaje = await Task.Run(() => new ComplejidadDAO().eliminarComplejidad(id));
