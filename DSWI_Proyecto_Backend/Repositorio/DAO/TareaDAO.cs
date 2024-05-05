@@ -1,10 +1,11 @@
 ﻿using DSWI_Proyecto_Backend.Models;
+using DSWI_Proyecto_Backend.Repositorio.Interfaces;
 using Microsoft.Data.SqlClient;
 using System.Data;
 
 namespace DSWI_Proyecto_Backend.Repositorio.DAO
 {
-    public class TareaDAO
+    public class TareaDAO : ITarea
     {
 
         private readonly string cadena;
